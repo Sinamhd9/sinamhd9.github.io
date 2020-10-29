@@ -8,8 +8,44 @@ excerpt: "Data Wrangling, Data Science, Messy Data"
 mathjax: "true"
 ---
 
+<h1><center>Titanic: A complete project from scratch: Data analysis, visualization, and modeling</center></h1>
+<center><img src="https://www.rd.com/wp-content/uploads/2019/08/auction-of-titanic-travel-brochures-wiltshire-uk-apr-2017-e1567006087133-760x506.jpg"></center>
 
 
+<div class="list-group" id="list-tab" role="tablist">
+<h2 class="list-group-item list-group-item-action active" data-toggle="list" style='background:red; border:0; color:white' role="tab" aria-controls="home"><center>Quick navigation</center></h2>
+
+    
+    
+* [Problem Description](#1)
+* [Explanatory Data Analysis (EDA)](#2)
+    - [New feature (Title)](#21)
+    - [Missing Values](#22)
+        - [Cabin](#221)
+        - [Embarked and Fare](#222)
+        - [Age](#223)
+    - [Exploring features](#23)
+        - [Sex](#231)
+        - [Ticket class (Pclass)](#232)
+        - [Number of Siblings/Spouses](#233)
+        - [Number of Parents/Children](#234)
+        - [Embarked](#235)
+        - [Fare](#236)
+        - [Ticket, Name, PassengerID](#237)
+* [Training](#3)
+    - [Defining our classifiers](#31)
+        - [Logistic Regression (from scratch)](#311)
+        - [Least Square Ridge Classifier (from scratch)](#312)
+        - [Preprocess](#313)
+        - [Train and validate (KFold)](#314)
+    - [Scikit-learn models](#32)
+        - [Hyperparameter tuning](#321)
+        - [Random Forest Classifier](#322)
+        - [Logistic Regression Classifier](#323)
+        - [XGBoost Classifier](#324)
+    - [Deep Neural Network with Keras](#33)
+    - [Voting Classifier](#34)
+* [Summary](#4)
 
 
 <a id="1"></a>
@@ -336,7 +372,7 @@ display(df_all.isnull().sum())           # Number of missing values
     
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_3_5.png)
+![png](titanic_files/titanic_5_5.png)
 
 
     Number of missing values in 1309 examples
@@ -447,7 +483,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_8_0.png)
+![png](titanic_files/titanic_10_0.png)
 
 
 Well, it seems having a cabin number is correlated with having a higher class ticket and also having higher survival! Most of the examples with cabin numbers had P-class of 1, and most of the people without cabin numbers are died. So we are going to keep this new feature. 
@@ -485,7 +521,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_13_0.png)
+![png](titanic_files/titanic_15_0.png)
 
 
     count    1046.000000
@@ -500,7 +536,7 @@ plt.show()
     
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_13_2.png)
+![png](titanic_files/titanic_15_2.png)
 
 
 Ok, we plotted the age range with respect to differnet sexes and survival. How about other features? Next, we will group the age variable with respect to sex, Pclass, and Title. We can see the median age for people in each group is different. For example, The median age for a Miss in Pclass of 3 is 18, while the median age for a male officer in Pclass of 1 is 52. Therefore, instead of filling out all the missing values with only one median, it makes better sense to fill the missing values of each person with respect to her title, gender, and Pclass. 
@@ -540,7 +576,7 @@ plt.show()
 
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_15_1.png)
+![png](titanic_files/titanic_17_1.png)
 
 
 
@@ -598,7 +634,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_21_0.png)
+![png](titanic_files/titanic_23_0.png)
 
 
 <a id="232"></a>
@@ -615,7 +651,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_23_0.png)
+![png](titanic_files/titanic_25_0.png)
 
 
 <a id="233"></a>
@@ -632,7 +668,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_25_0.png)
+![png](titanic_files/titanic_27_0.png)
 
 
 <a id="234"></a>
@@ -649,7 +685,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_27_0.png)
+![png](titanic_files/titanic_29_0.png)
 
 
 <a id="234"></a>
@@ -666,7 +702,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_29_0.png)
+![png](titanic_files/titanic_31_0.png)
 
 
 <a id="235"></a>
@@ -684,7 +720,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_31_0.png)
+![png](titanic_files/titanic_33_0.png)
 
 
 <a id="236"></a>
@@ -703,7 +739,7 @@ plt.show()
 ```
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_33_0.png)
+![png](titanic_files/titanic_35_0.png)
 
 
 <a id="237"></a>
@@ -1778,7 +1814,7 @@ tf.keras.utils.plot_model(model, show_shapes = True, show_layer_names= False,
 
 
 
-![png](titanic_a_complete_project_from_scratch_tutorial_files/titanic_a_complete_project_from_scratch_tutorial_64_0.png)
+![png](titanic_files/titanic_66_0.png)
 
 
 
@@ -1968,3 +2004,8 @@ display(df_sample_sub.head())
 
 In this project, we first performed explanatory data analysis and investigated each feature individually. We engineered two new features out of names and cabin. We filled the missing values based on a reasonable approach. For example, age is filled with median of each group based on their P-class, Sex and Title. After cleaning the dataset, we normalized the data to be in a range of (0,1) and then implemented two machine learning models, Logistic Regression and Ridge classifier, from scratch. We then implemented Logistic Regression, Random Forest and XGBoost using scikit-learn library and a deep neural network using Keras on Tensorflow. We used hyperparameter tuning to find the best parameters for our models, and used KFold cross validation technique. At last, we used a voting classifier to take into account each classifier's output. Please note that different models or feature engineering may result in better outcome.<font size="4"> 
     <b> Please upvote this kernel if it was useful :) </b></font>
+
+
+
+
+
