@@ -164,56 +164,33 @@ img_RGB_source = cv2.imread('source.jfif', cv2.IMREAD_COLOR)
 img_RGB_target = cv2.imread('target.jfif',cv2.IMREAD_COLOR )
 print('----- Source -----')
 cv2_imshow(img_RGB_source)
-print('----- Target -----')
-
-cv2_imshow(img_RGB_target)
-
-img_RGB_new_Lab = color_transfer(img_RGB_source, img_RGB_target, option='in_Lab')
-cv2_imshow(img_RGB_new_Lab)
-
-img_RGB_new_RGB = color_transfer(img_RGB_source, img_RGB_target, option='in_RGB')
-cv2_imshow(img_RGB_new_RGB)
-
-img_RGB_new_CIECAM97s = color_transfer(img_RGB_source, img_RGB_target, option='in_CIECAM97s')
-cv2_imshow(img_RGB_new_CIECAM97s)
 ```
-
-    ----- Source -----
-    
-
-
-![png](color_transfer_files/color_transfer_1_1.png)
-
-
-    ----- Target -----
-    
-
-
-![png](color_transfer_files/color_transfer_1_3.png)
-
-
-    ----- color_transfer_in_Lab -----
-    
-
-
-![png](color_transfer_files/color_transfer_1_5.png)
-
-
-    ----- color_transfer_in_RGB -----
-    
-
-
-![png](color_transfer_files/color_transfer_1_7.png)
-
-
-    -----color_transfer_in_CIECAM97s -----
-    
-
-
-![png](color_transfer_files/color_transfer_1_9.png)
-
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-soruce.jpg" alt="source image">
 
 
 ```python
-
+print('----- Target -----')
+cv2_imshow(img_RGB_target)
 ```
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-target.jpg" alt="target image">
+
+```python
+img_RGB_new_Lab = color_transfer(img_RGB_source, img_RGB_target, option='in_Lab')
+cv2_imshow(img_RGB_new_Lab)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result.jpg" alt="result image">
+
+```python
+img_RGB_new_RGB = color_transfer(img_RGB_source, img_RGB_target, option='in_RGB')
+cv2_imshow(img_RGB_new_RGB)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-rgb.jpg" alt="result rgb image">
+
+```python
+img_RGB_new_CIECAM97s = color_transfer(img_RGB_source, img_RGB_target, option='in_CIECAM97s')
+cv2_imshow(img_RGB_new_CIECAM97s)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-CIE.jpg" alt="result CIE image">
+
+
+
