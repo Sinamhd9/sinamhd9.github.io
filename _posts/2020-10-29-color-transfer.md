@@ -1,4 +1,16 @@
 ```python
+---
+title: "Color transfer"
+date: 2020-10-29
+tags: [computer vision, color transfer, image processing]
+header:
+  image: "/images/perceptron/percept.jpg"
+excerpt: "Computer vision, Color transfer, Image processing"
+mathjax: "true"
+---
+
+
+
 ''' Color Transfer implementation by Sina Mehdinia: Fully vectorized (no for loop) 
 Reference paper: Color transfer between images. Erik Reinhard, Michael Ashikhmin, Bruce Gooch, and Peter Shirley.
 IEEE Computer Graphics and Applications.21(5), 2001: 34 - 41.
