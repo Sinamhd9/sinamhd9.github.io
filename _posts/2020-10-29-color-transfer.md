@@ -1,4 +1,3 @@
-```python
 ---
 title: "Color transfer"
 date: 2020-10-29
@@ -10,7 +9,7 @@ mathjax: "true"
 ---
 
 
-
+```python
 ''' Color Transfer implementation by Sina Mehdinia: Fully vectorized (no for loop) 
 Reference paper: Color transfer between images. Erik Reinhard, Michael Ashikhmin, Bruce Gooch, and Peter Shirley.
 IEEE Computer Graphics and Applications.21(5), 2001: 34 - 41.
