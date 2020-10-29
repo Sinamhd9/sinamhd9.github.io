@@ -5,6 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-Etc, etc, etc
+Ph.D. student of structural engineering and graduate research assistant at Portland State University. Skilled in nondestructive evaluation (NDE) of concrete structures, ultrasonics, ground-penetrating radar (GPR), digital signal and image processing, computer vision, machine learning, Python, and MATLAB.
