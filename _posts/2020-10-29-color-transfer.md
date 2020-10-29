@@ -1,5 +1,5 @@
 ---
-title: "Color transfer"
+title: "Color Transfer in RGB, Lab, and CIECAM97s"
 date: 2020-10-29
 tags: [computer vision, color transfer, image processing]
 header:
