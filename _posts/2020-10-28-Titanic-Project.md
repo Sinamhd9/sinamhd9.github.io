@@ -1,4 +1,3 @@
-
 ---
 title: "Titanic Project"
 date: 2020-10-28
