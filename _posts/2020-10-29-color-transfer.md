@@ -3,7 +3,7 @@ title: "Color transfer"
 date: 2020-10-29
 tags: [computer vision, color transfer, image processing]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: "/images/color_transfer/image-result.png"
 excerpt: "Computer vision, Color transfer, Image processing"
 mathjax: "true"
 ---
@@ -165,32 +165,32 @@ img_RGB_target = cv2.imread('target.jfif',cv2.IMREAD_COLOR )
 print('----- Source -----')
 cv2_imshow(img_RGB_source)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-soruce.jpg" alt="source image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-soruce.png" alt="source image">
 
 
 ```python
 print('----- Target -----')
 cv2_imshow(img_RGB_target)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-target.jpg" alt="target image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-target.png" alt="target image">
 
 ```python
 img_RGB_new_Lab = color_transfer(img_RGB_source, img_RGB_target, option='in_Lab')
 cv2_imshow(img_RGB_new_Lab)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result.jpg" alt="result image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result.png" alt="result image">
 
 ```python
 img_RGB_new_RGB = color_transfer(img_RGB_source, img_RGB_target, option='in_RGB')
 cv2_imshow(img_RGB_new_RGB)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-rgb.jpg" alt="result rgb image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-rgb.png" alt="result rgb image">
 
 ```python
 img_RGB_new_CIECAM97s = color_transfer(img_RGB_source, img_RGB_target, option='in_CIECAM97s')
 cv2_imshow(img_RGB_new_CIECAM97s)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-CIE.jpg" alt="result CIE image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-result-CIE.png" alt="result CIE image">
 
 
 
