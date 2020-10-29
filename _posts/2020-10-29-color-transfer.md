@@ -3,7 +3,7 @@ title: "Color transfer"
 date: 2020-10-29
 tags: [computer vision, color transfer, image processing]
 header:
-  image: "/images/color_transfer/image-result.png" width="60%"
+  image: "/images/color_transfer/image-result.png"
 excerpt: "Computer vision, Color transfer, Image processing"
 mathjax: "true"
 ---
