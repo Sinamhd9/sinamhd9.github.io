@@ -1,10 +1,10 @@
 ---
-title: "Data Wrangling Project"
+title: "Ultrasonic image reconstruction using Synthetic Aperture Focusing Technique (SAFT)"
 date: 2020-10-28
-tags: [Ultrasonic, TFM, Image Processing, SAFT, Concrete]
+tags: [Ultrasonic, TFM, Image Processing, SAFT, Concrete, NDE]
 header:
   image: "/images/perceptron/percept.jpg"
-excerpt: "Ultrasonic, TFM, Image Processing, SAFT, Concrete"
+excerpt: "Ultrasonic, TFM, Image Processing, SAFT, Concrete, NDE"
 mathjax: "true"
 ---
 
