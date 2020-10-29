@@ -1,10 +1,10 @@
 ---
-title: "Titanic Project"
+title: "Titanic"
 date: 2020-10-28
-tags: [EDA, data cleaning, feature engineering, SKlearn, Deep learning]
+tags: [data wrangling, data science, messy data]
 header:
   image: "/images/perceptron/percept.jpg"
-excerpt: "EDA, data cleaning, feature engineering, SKlearn, Deep learning"
+excerpt: "Data Wrangling, Data Science, Messy Data"
 mathjax: "true"
 ---
 
