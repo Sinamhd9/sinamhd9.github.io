@@ -9,7 +9,7 @@ mathjax: "true"
 ---
 
 
-# Ultrasound Panoramic Imaging using Total Focusing Method
+# Ultrasonic image reconstruction using Synthetic Aperture Focusing Technique (SAFT)
 ## Author: Sina Mehdinia
 
 
