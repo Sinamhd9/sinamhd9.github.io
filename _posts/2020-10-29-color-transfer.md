@@ -165,7 +165,7 @@ img_RGB_target = cv2.imread('target.jfif',cv2.IMREAD_COLOR )
 print('----- Source -----')
 cv2_imshow(img_RGB_source)
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-soruce.png" alt="source image">
+<img src="{{ site.url }}{{ site.baseurl }}/images/color_transfer/image-source.png" alt="source image">
 
 
 ```python
