@@ -9,7 +9,7 @@ mathjax: "true"
 ---
 
 
-```
+```python
 # !pip install opencv-contrib-python==4.4.0.44
 
 import cv2
@@ -84,7 +84,7 @@ def ex_find_homography_ransac(list_pairs_matched_keypoints, threshold_ratio_inli
     
 
 
-```
+```python
 
 def ex_extract_and_match_feature(img_1, img_2, ratio_robustness=0.7):
     '''
@@ -123,7 +123,7 @@ def ex_extract_and_match_feature(img_1, img_2, ratio_robustness=0.7):
 ```
 
 
-```
+```python
 def ex_warp_blend_crop_image(img_1, H_1, img_2):
     '''
     1/ warp image img_1 using the homography H_1 to align it with image img_2 (using backward warping and bilinear resampling)
@@ -178,7 +178,7 @@ def ex_warp_blend_crop_image(img_1, H_1, img_2):
 ```
 
 
-```
+```python
 def stitch_images(img_1, img_2):
     '''
     :param img_1: input image 1. We warp this image to align and stich it to the image 2
@@ -202,7 +202,7 @@ def stitch_images(img_1, img_2):
 ```
 
 
-```
+```python
 from google.colab.patches import cv2_imshow
 # Visualization
 img_1 = cv2.imread('im3.jpg')
