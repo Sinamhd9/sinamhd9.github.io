@@ -3891,7 +3891,7 @@ Here is the summary based on what we have done:
 
 In this project, we first tested three different classifiers and realized that Light gradient booster (lighgbm) is the best in terms of accuracy and speed. Then, we explained how to deal with the imbalance of the data. Our solution did not include any kind of resampling. Then we expalined our cross-validation method and why we use Stratified KFold. Then, we performed hyperparameter tuning to take the most out of our algorithm. At last, we evaluated our algorithm to see what features are more important and how we can improve the relative predicted probability of true 1s with some changes in the features. The main limitations of this data science problem are the inherent randomness of the problem and not knowing exactly what the features are.
 
-#Challenges
+# Challenges
 
 There were many challenges in this problem which were mainly from the data while some from the algorithms. <br>
 
@@ -3903,7 +3903,7 @@ There were many challenges in this problem which were mainly from the data while
 
 4. Feature engineering was very hard, because we do not know the real names of features and we can not have intuition on them. 
 
-#What I Learned
+# What I Learned
 
 
 1. I learned how to deal with an imbalanced dataset and how important this concept is when some labels are rare. I got familiar with resampling strategies 
@@ -3920,7 +3920,7 @@ I learned these from the references below.
 <font size="4"> 
     <b>Please leave a comment and let me know what you learned from this kernel and upvote if it was useful :) </b></font>
 
-#References
+# References
 <a href="https://lightgbm.readthedocs.io/en/latest/"> [1] LightGBM’s documentation</a> <br>
 <a href="https://imbalanced-learn.readthedocs.io/en/stable/api.html">[2] Imbalanced-learn documentation</a> <br>
 <a href="https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets">[3] Credit Fraud || Dealing with Imbalanced Datasets</a> <br>
