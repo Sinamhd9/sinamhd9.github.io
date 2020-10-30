@@ -1,4 +1,12 @@
-
+---
+title: "Safe driver prediction: Data analysis, visualization, and modeling"
+date: 2020-10-30
+tags: [data visualization, data cleaning, exploratory data analysis, lightgbm]
+header:
+  image: "/images/safe_driver/driver.jfif"
+excerpt: "Data Visualization, Data Cleaning, Exploratory Data Analysis, lightGBM"
+mathjax: "true"
+---
 
 
 # Safe driver prediction: A comprehensive data analysis, visualization, and modeling
@@ -401,7 +409,7 @@ plt.show()
 ```
 
 
-![png](safe_driver_files/safe_driver_10_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_1.png" alt="safe_1">
 
 
 <a id="23"></a>
@@ -432,11 +440,11 @@ plt.show()
     
 
 
-![png](safe_driver_files/safe_driver_12_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_2.png" alt="safe_2">
 
 
 
-![png](safe_driver_files/safe_driver_12_2.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_3.png" alt="safe_3">
 
 
 We can see that although there is 0 Nan values in the dataset, there are alot of -1 values which are our missing values. Some of the features have many missing values. For example, 69% of ps_car_03_cat features are missing. Please note that the numbers are in percentage. Also, we can see that we have the same amount of missing values in both training and test set with the same distribution. To better see the frequency of missing values, we are using heatmap to visualize all the features. 
@@ -450,7 +458,7 @@ plt.show()
 ```
 
 
-![png](safe_driver_files/safe_driver_14_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_4.png" alt="safe_4">
 
 
 We can see that 'ps_car_03_cat' and 'ps_car_05_cat' have many missing values (69% and 45% respectively). For now, we are going to keep all the features.
@@ -500,11 +508,11 @@ plt.show()
 ```
 
 
-![png](safe_driver_files/safe_driver_19_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_5.png" alt="safe_5">
 
 
 
-![png](safe_driver_files/safe_driver_19_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_6.png" alt="safe_6">
 
 
 From the above figures we can see the following:
@@ -581,7 +589,7 @@ plt.show()
 ```
 
 
-![png](safe_driver_files/safe_driver_25_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_7.png" alt="safe_7">
 
 
 'ps_reg_3' seems to be right skewed. We can see many -1 values in this feature which we will replace later.<br>
@@ -597,7 +605,7 @@ plt.show()
 ```
 
 
-![png](safe_driver_files/safe_driver_27_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_8.png" alt="safe_8">
 
 
 From the above figure we can see: <br>
@@ -3510,7 +3518,7 @@ plt.show()
 
 
 
-![png](safe_driver_files/safe_driver_52_1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/safe_driver/safe_9.png" alt="safe_9">
 
 
 Now, let's see how the top 10 data differ in these features with each other.
