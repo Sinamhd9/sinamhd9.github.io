@@ -383,7 +383,7 @@ display(df_test.head())
 </div>
 
 
-We can see that the training data size is $595212\times 59$ and test data size is $892816\times58$. It means our testing data size is bigger. As we can see from the above tables, we have 59 columns in training and 58 in test, where the difference is the target variable. The feature names are encoded so we cannot know what they mean, however, we know the features that belong to similar groupings are tagged (e.g., ind, reg, car, calc). Also, we know that cat shows categorical variable and bin means binary. The target values are binary labels which 1 means that claim was filed.  
+We can see that the training data size is $$595212\times 59$$ and test data size is $$892816\times58$$. It means our testing data size is bigger. As we can see from the above tables, we have 59 columns in training and 58 in test, where the difference is the target variable. The feature names are encoded so we cannot know what they mean, however, we know the features that belong to similar groupings are tagged (e.g., ind, reg, car, calc). Also, we know that cat shows categorical variable and bin means binary. The target values are binary labels which 1 means that claim was filed.  
 
 <a id="22"></a>
 
