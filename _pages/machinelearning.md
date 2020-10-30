@@ -4,7 +4,7 @@ permalink: /projects/
 title: "Projects"
 author_profile: true
 header:
-  image:
+  image:"images/code2.jfif"
 ---
 
 
