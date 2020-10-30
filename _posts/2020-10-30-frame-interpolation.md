@@ -3,7 +3,7 @@ title: "Frame Interpolation with Optical Flow"
 date: 2020-10-30
 tags: [computer vision, image processing, optical flow]
 header:
-  image: "/images/optical_flow/frames.jpeg"
+  image: "/images/frame_interpolation/frames.jpg"
 excerpt: "Computer vision, Image processing, Optical flow"
 mathjax: "true"
 ---
@@ -323,6 +323,10 @@ cv2_imshow((frame_t * 1.0).clip(0.0, 255.0).astype(np.uint8))
     ==============================
     
 
-
-![png](frame_interpolation_files/frame_interpolation_9_1.png)
+# Frame 0 
+<img src="{{ site.url }}{{ site.baseurl }}/images/frame_interpolation/frame0.png" alt="frame0">
+# Frame 1 
+<img src="{{ site.url }}{{ site.baseurl }}/images/frame_interpolation/frame1.png" alt="frame1">
+# Result (Frame 0.5)
+<img src="{{ site.url }}{{ site.baseurl }}/images/frame_interpolation/interp.png" alt="interp">
 
