@@ -1,6 +1,8 @@
 ---
-title: "Resume"
+layout: posts
 permalink: /resume/
+title: "Resume"
+author_profile: true
 header:
   image: "/images/oregon.jfif"
 ---
