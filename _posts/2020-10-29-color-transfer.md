@@ -3,7 +3,7 @@ title: "Color Transfer in RGB, Lab, and CIECAM97s"
 date: 2020-10-29
 tags: [computer vision, color transfer, image processing]
 header:
-  image: "/images/color_transfer/image-result.png"
+  image: "/images/color_transfer/color_transfer.jfif"
 excerpt: "Computer vision, Color transfer, Image processing"
 mathjax: "true"
 ---
