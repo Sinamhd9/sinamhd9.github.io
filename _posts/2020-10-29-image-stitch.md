@@ -4,7 +4,7 @@ date: 2020-10-29
 tags: [computer vision, image processing, panorama, ransac]
 header:
   image: "/images/image_stitch/panorama.jfif"
-excerpt: "Computer vision, Image processing, Panorama, RANSAC]"
+excerpt: "Computer vision, Image processing, Panorama, RANSAC"
 mathjax: "true"
 ---
 
