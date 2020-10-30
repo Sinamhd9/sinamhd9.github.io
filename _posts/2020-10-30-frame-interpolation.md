@@ -9,7 +9,7 @@ mathjax: "true"
 ---
 
 
-```
+```python
 import cv2
 import sys
 import numpy as np
@@ -40,7 +40,7 @@ def readFlowFile(file):
 ```
 
 
-```
+```python
 def occlusions(flow0, frame0, frame1):
     '''
     Follow the step 3 in 3.3.2 of
@@ -79,7 +79,7 @@ def occlusions(flow0, frame0, frame1):
 ```
 
 
-```
+```python
 def bilinear(im, y, x):
     x = np.clip(x, 0, im.shape[1] - 1)
     y = np.clip(y, 0, im.shape[0] - 1)
@@ -105,8 +105,7 @@ def bilinear(im, y, x):
 ```
 
 
-```
-
+```python
 def find_holes(flow):
     '''
     Find a mask of holes in a given flow matrix
@@ -126,7 +125,7 @@ def find_holes(flow):
 ```
 
 
-```
+```python
 
 def holefill(flow, holes):
     '''
@@ -159,7 +158,7 @@ def holefill(flow, holes):
 ```
 
 
-```
+```python
 def interpflow(flow, frame0, frame1, t):
     '''
     Forward warping flow (from frame0 to frame1) to a position t in the middle of the 2 frames
@@ -193,7 +192,7 @@ def interpflow(flow, frame0, frame1, t):
 ```
 
 
-```
+```python
 def warpimages(iflow, frame0, frame1, occ0, occ1, t):
     '''
     Compute the colors of the interpolated pixels by inverse-warping frame 0 and frame 1 to the postion t based on the
@@ -229,7 +228,7 @@ def warpimages(iflow, frame0, frame1, occ0, occ1, t):
 ```
 
 
-```
+```python
 def blur(im):
     '''
     blur using a gaussian kernel [5,5] using opencv function: cv2.GaussianBlur, sigma=0
@@ -241,7 +240,7 @@ def blur(im):
 ```
 
 
-```
+```python
 def internp(frame0, frame1, t=0.5, flow0=None):
     '''
     :param frame0: beggining frame
@@ -303,7 +302,7 @@ def internp(frame0, frame1, t=0.5, flow0=None):
 ```
 
 
-```
+```python
 from google.colab.patches import cv2_imshow
     # ===================================
     # example:
