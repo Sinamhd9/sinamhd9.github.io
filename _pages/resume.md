@@ -4,4 +4,4 @@ title: "Resume"
 header:
   image: 
 ---
-https://username.github.io/images/resume_sina_update10302020.pdf
+https://sinamhd9.github.io/images/resume_sina_update10302020.pdf
