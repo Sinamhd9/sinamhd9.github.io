@@ -1,10 +1,10 @@
 ---
 title: "Image Stitching"
 date: 2020-10-29
-tags: [computer vision, image processing, panorama, ransac]
+tags: [computer vision, image processing, panorama, ransac, opencv]
 header:
   image: "/images/image_stitch/panorama.jfif"
-excerpt: "Computer vision, Image processing, Panorama, RANSAC"
+excerpt: "Computer vision, Image processing, Panorama, RANSAC, OpenCV"
 mathjax: "true"
 ---
 
