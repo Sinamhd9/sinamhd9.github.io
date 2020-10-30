@@ -4,4 +4,4 @@ title: "Resume"
 header:
   image: 
 ---
-<a href="images/Resume.pdf"><button class="btn">View PDF</button></a>
+<a href="sina_resume_update10302020.pdf"><button class="btn">View PDF</button></a>
