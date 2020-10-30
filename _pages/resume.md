@@ -4,4 +4,4 @@ title: "Resume"
 header:
   image: 
 ---
-<a href="sinamhd9.github.io/_pages/sina_resume_update10302020.pdf" target="_blank">PDF.</a>
+https://username.github.io/images/resume_sina_update10302020.pdf
