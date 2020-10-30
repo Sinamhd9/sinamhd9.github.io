@@ -8,10 +8,6 @@ excerpt: "Data Visualization, Data Cleaning, Exploratory Data Analysis, lightGBM
 mathjax: "true"
 ---
 
-
-# Safe driver prediction: A comprehensive data analysis, visualization, and modeling
-
-
 # Problem Description
 
 Before doing any data science project, it is important to ask ourselves what is the problem we are going to solve? Can we predict if someone is going to file an insurance claim next year? It seems this problem has too much randomness in its nature and it will be hard to predict the future based on the past data. This is why the best score of the leaderboard is not far better than a random guess. However, we cannot ignore the predictive power of some features. 
@@ -618,7 +614,7 @@ From the above figure we can see: <br>
 
 It seems that ps_calc continous features do not have any linear correlation with other continous features. 
 
-#Training
+# Training
 
 My approach to this project is explained through different steps. As a summary, we first train three different simple models to choose the best performance in terms of gini score and speed. Then, we will see how to deal with the imbalanced dataset. Afterwards, we will go through choosing cross-validation sets, performing hyperparameter tuning, feature engineering and choosing our final model. 
 
@@ -717,7 +713,8 @@ It should be also noted that, as we can see from the confusion matrix, all the p
 <a id="32"></a>
 
 ## Dealing with imbalance dataset
-We will train our model with the transformed data. The transformations are random undersampling, random oversampling and SMOTE over sampling $\href{https://imbalanced-learn.readthedocs.io/en/stable/api.html}{[2]}$.
+We will train our model with the transformed data. The transformations are random undersampling, random oversampling and SMOTE over sampling <a href="https://imbalanced-learn.readthedocs.io/en/stable/api.html">[2]</a> <br>
+.
 
 <a id="321"></a>
 
@@ -3926,8 +3923,3 @@ I learned these from the references below.
 <a href="https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets">[3] Credit Fraud || Dealing with Imbalanced Datasets</a> <br>
 <a href="https://medium.com/lumiata/cross-validation-for-imbalanced-datasets-9d203ba47e8#:~:text=I%20split%20the%20data%20first,into%20train%20and%20validation%20sets">[4] Cross-Validation for Imbalanced Datasets</a>
 
-
-
-```python
-
-```
