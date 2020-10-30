@@ -5,4 +5,4 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-Ph.D. student of structural engineering and graduate research assistant at Portland State University. Skilled in nondestructive evaluation (NDE) of concrete structures, ultrasonics, ground-penetrating radar (GPR), digital signal and image processing, computer vision, machine learning, Python, and MATLAB.
+Hi there! My name is Sina, I am a Ph.D. student of structural engineering at Portland State University. Here, I will share some of my projects.
