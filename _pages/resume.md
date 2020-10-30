@@ -4,5 +4,5 @@ permalink: /resume/
 title: "Resume"
 author_profile: true
 header:
-  image: "/images/oregon.jfif"
+  image: "/images/resume_sina_update10302020.pdf"
 ---
