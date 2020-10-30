@@ -1,3 +1,14 @@
+---
+title: "Frame Interpolation with Optical Flow"
+date: 2020-10-30
+tags: [computer vision, image processing, optical flow]
+header:
+  image: "/images/optical_flow/frames.jpeg"
+excerpt: "Computer vision, Image processing, Optical flow"
+mathjax: "true"
+---
+
+
 ```
 import cv2
 import sys
