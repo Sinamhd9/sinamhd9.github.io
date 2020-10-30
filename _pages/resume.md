@@ -4,4 +4,4 @@ title: "Resume"
 header:
   image: 
 ---
-https://sinamhd9.github.io/images/resume_sina_update10302020.pdf
+<a href="images/Resume.pdf"><button class="btn">View PDF</button></a>
