@@ -1,3 +1,13 @@
+---
+title: "Mechanisms of Action (MoA) Prediction"
+date: 2020-11-21
+tags: [biology,genetics,transfer learning,deep learning, exploratory data analysis,multilabel classification]
+header:
+  image: "/images/color_transfer/color_transfer.jfif"
+excerpt: "Biology, Genetics, Transfer Learning, Deep Learning, Exploratory Data Analysis, Multilabel Classification, "
+mathjax: "true"
+---
+
 # Problem Description
 
 It is important to ask the right question before trying to solve it! Can we predict mechanism of action (MoA) of a drug based on gene expression and cell viability data? Or better to ask first, what is mechansim of action? The term mechanism of action means the biochemical interactions through which a drug generates its pharmacological effect. Scientists know many MoAs of drugs, for example, an antidepressant may have a selective serotonin reuptake inhibitor (SSRI), which affects the brain serotonin level. In this project we are going to train a model that classifies drugs based on their biological activity. The dataset consists of different features of gene expression data, and cell viability data as well as multiple targets of mechansim of action (MoA). This problem is a multilabel classification, which means we have multiple targets (not multiple classes). In this project, we will first perform explanatory data analysis and then train a model using deep neural networks with Keras. We will do a bit model evaluation at the end.
@@ -844,7 +854,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_11_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa1.png" alt="moa1">
 
 
 ### Cell viability features
@@ -876,7 +886,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_14_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa2.png" alt="moa2">
 
 
 It seems data are somehow normalized and also clipped at -10, 10. Please see this great discussion here: <a href="https://www.kaggle.com/c/lish-moa/discussion/184005"> [2] </a>
@@ -897,7 +907,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_17_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa3.png" alt="moa3">
 
 
 We can see there are almost the same number of examples in each treatment duration and dosage features.
@@ -921,7 +931,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_21_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa4.png" alt="moa4">
 
 
 
@@ -936,7 +946,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_22_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa5.png" alt="moa5">
 
 
 Or we can do the same process with the mean of g and c features. For example, here we plot the mean of g and c features with respect to a target, dosage and time. 
@@ -954,7 +964,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_24_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa6.png" alt="moa6">
 
 
 
@@ -970,7 +980,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_25_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa7.png" alt="moa7">
 
 
 We can get some insights from the figures above and apply it in our [Preprocessing](#26) step 
@@ -997,7 +1007,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_28_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa8.png" alt="moa8">
 
 
 Let's see the 20 largest positive number of labels in the scored targets. 
@@ -1010,7 +1020,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_30_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa9.png" alt="moa9">
 
 
 And here are some non-scored targets. We can see that some labels do no have positive examples at all.
@@ -1034,7 +1044,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_32_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa10.png" alt="moa10">
 
 
 And here is the 20 largest positive number of labels in the non-scored targets. 
@@ -1047,7 +1057,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_34_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa11.png" alt="moa11">
 
 
 As we can see, there are fewer positive examples in non-scored dataset.
@@ -2880,7 +2890,7 @@ plt.show()
 ```
 
 
-![png](mechanisms_of_action_moa_tutorial_files/mechanisms_of_action_moa_tutorial_63_0.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/moa/moa12.png" alt="moa12">
 
 
 As we can see label 71 is contributing the most to the loss. As we saw earlier, this target was also the third top in having the most positive labels. Some may think of using imblearn library to address the imbalance problem. <a href="https://www.kaggle.com/sinamhd9/safe-driver-prediction-a-comprehensive-project">[8] </a> However, this may get complicated for a multilabel problem .
