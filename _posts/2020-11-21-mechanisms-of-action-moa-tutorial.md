@@ -3,7 +3,7 @@ title: "Mechanisms of Action (MoA) Prediction"
 date: 2020-11-21
 tags: [biology,genetics,transfer learning,deep learning, exploratory data analysis,multilabel classification]
 header:
-  image: "/images/color_transfer/color_transfer.jfif"
+  image: "/images/moa/moa.jfif"
 excerpt: "Biology, Genetics, Transfer Learning, Deep Learning, Exploratory Data Analysis, Multilabel Classification, "
 mathjax: "true"
 ---
