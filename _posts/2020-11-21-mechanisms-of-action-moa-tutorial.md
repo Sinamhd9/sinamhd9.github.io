@@ -4,7 +4,7 @@ date: 2020-11-21
 tags: [biology,genetics,transfer learning,deep learning, exploratory data analysis,multilabel classification]
 header:
   image: "/images/moa/moa.jfif"
-excerpt: "Biology, Genetics, Transfer Learning, Deep Learning, Exploratory Data Analysis, Multilabel Classification, "
+excerpt: "Biology, Genetics, Transfer Learning, Deep Learning, Exploratory Data Analysis, Multilabel Classification"
 mathjax: "true"
 ---
 
