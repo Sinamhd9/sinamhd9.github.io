@@ -1,3 +1,14 @@
+---
+title: "pile"
+date: 2021-01-16
+tags: [computer vision, image processing, panorama, ransac, opencv]
+header:
+  image: "/images/image_stitch/panorama.jfif"
+excerpt: "Computer vision, Image processing, Panorama, RANSAC, OpenCV"
+mathjax: "true"
+---
+
+
 ```python
 %matplotlib widget
 import numpy as np
